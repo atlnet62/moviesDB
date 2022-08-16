@@ -10,7 +10,7 @@ function App() {
             <Header />
 
             <main>
-                {/* <Section nameClass="Search" /> */}
+                <Section nameClass="Search" />
     
                 <Section nameClass= "Film" title="Voici la liste des films tendances de la semaine!" />
 

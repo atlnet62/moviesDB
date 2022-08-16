@@ -1,5 +1,6 @@
 import React from 'react'
 import Article from './Article';
+import SearchBar from './SearchBar';
 import Loading from './Loading';
 import { useState, useEffect } from 'react';
 
@@ -25,10 +26,23 @@ function Section(props) {
     <section className={props.nameClass}>
         <h2>{props.title}</h2>
         
-        {movies.length > 0 ? movies.map((movie, index) => {
-                return <Article key={movie.id} {...movie} />
-            }) : <Loading />
-        }
+        {
+            props.nameClass === 'Film' 
+            ? 
+                (movies.length > 0 
+                ? 
+                    movies.map((movie, index) => {
+                        return <Article key={movie.id} {...movie} />
+                    }) 
+                : 
+                    <Loading />) 
+            : 
+            (props.nameClass === 'Search' 
+            ?
+                <SearchBar />
+            : (props.nameClass === 'searchArea'
+            ? 'searchArea' : 'Erreur de connexion'))
+    }
     </section>
   )
 }
