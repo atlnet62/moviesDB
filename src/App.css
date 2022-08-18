@@ -23,14 +23,16 @@ img {
 .Film {
 	display: flex;
 	flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .Film h2 {
 	width: 100%;
+    text-align: center;
 }
 
 article {
-	background-color: #3aa0ff79;
+	background-color: #3aa0ffa9;
 	width: 30%;
 	margin: 1%;
 	padding: 0.5%
@@ -56,15 +58,13 @@ body {
 
 header {
     font-family: "Great";
-    background-image: url(./assets/img/background.jpeg);
-    background-size: cover;
-    background-position: center;
+    background: url(./assets/img/background.jpeg) center bottom / cover no-repeat;
     box-shadow: 0 5px 5px grey;
 }
 
 h1 {
     color: gold;
-    padding: 100px;
+    padding: 150px;
     font-size: 4em;
     text-align: center;
     margin: 0;

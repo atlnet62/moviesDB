@@ -1,9 +1,10 @@
-import React from 'react'
 
 function Footer() {
   return (
     <footer>
-        <small><p>Copyright</p></small>
+        <small>
+          <p>Copyright</p>
+        </small>
     </footer>
   )
 }
