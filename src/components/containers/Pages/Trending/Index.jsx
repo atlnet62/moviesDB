@@ -2,7 +2,7 @@ import Card from '../../../UI/Card/Index';
 import Loading from './../../../UI/Elements/Loading';
 
 import { useState, useEffect } from 'react';
-import { config } from '../../../../Config/index';
+import { config } from '../../../../config/index';
 
 function Trending() {
 

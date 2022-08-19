@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
-import Loading from '../../UI/Elements/Loading';
 import Input from './../../UI/Elements/Input';
-import { config } from './../../../Config/index';
+import { config } from './../../../config/index';
 import Card from '../../UI/Card/Index';
 
 function SearchBar() {
@@ -12,7 +11,7 @@ function SearchBar() {
     useEffect(() => {
         getResultMovies();
 
-    })
+    }, [keyword])
 
 
     const getResultMovies = async () => {
@@ -23,6 +22,8 @@ function SearchBar() {
             setResult(resParsed.results);
         }
     }
+
+console.log(result)
 
     const clearResult = () => {
         setResult([]);
@@ -38,7 +39,8 @@ function SearchBar() {
                         return <Card key={movie.id} {...movie} />
                     }))
                 :
-                    (result.length > 0) ? clearResult() : 1 === 1
+                    /* (result.length > 0) ? clearResult() : null */
+                    (result.length > 0) && clearResult() // Short circuit evaluation
                 )
                 
             }

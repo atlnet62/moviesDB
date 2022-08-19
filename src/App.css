@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Dancing";
-    src: url("./Assets/Fonts/DancingScript/DancingScript-Bold.ttf");
+    src: url("./assets/fonts/dancingScript/DancingScript-Bold.ttf");
 }
 
 * {
@@ -15,13 +15,13 @@ html {
 
 body {
     font-size: 1.5em;
-    background: url(./Assets/Img/bcg.png) repeat;
+    background: url(./assets/img/bcg.png) repeat;
     /* background-repeat: repeat-y; */
 }
 
 header {
     font-family: "Dancing";
-    background: url(./Assets/Img/background.jpeg) center bottom / cover no-repeat;
+    background: url(./assets/img/background.jpeg) center bottom / cover no-repeat;
 }
 
 h1 {

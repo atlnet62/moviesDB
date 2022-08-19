@@ -1,5 +1,5 @@
 
-import loading from './../../../Assets/Img/loading.gif'
+import loading from './../../../assets/img/loading.gif'
 
 function Loading() {
   return (
