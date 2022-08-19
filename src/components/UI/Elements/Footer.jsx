@@ -3,7 +3,7 @@ function Footer() {
   return (
     <footer>
         <small>
-          <p>Copyright</p>
+          <p>Site du group 2lsoft</p>
         </small>
     </footer>
   )

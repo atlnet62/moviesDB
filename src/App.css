@@ -1,23 +1,39 @@
 @font-face {
-    font-family: "Great";
-    src: url("./assets/fonts/Great-Wishes.otf");
-}
-@font-face {
-    font-family: "Chocolate";
-    src: url("./assets/fonts/coolvetica.ttf");
+    font-family: "Dancing";
+    src: url("./Assets/Fonts/DancingScript/DancingScript-Bold.ttf");
 }
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
     font-size: 62.5%;
 }
 
-img {
-	width: 20%;
-	height: auto;
+body {
+    font-size: 1.5em;
+    background: url(./Assets/Img/bcg.png) repeat;
+    /* background-repeat: repeat-y; */
+}
+
+header {
+    font-family: "Dancing";
+    background: url(./Assets/Img/background.jpeg) center bottom / cover no-repeat;
+}
+
+h1 {
+    color: gold;
+    padding: 150px;
+    font-size: 6em;
+    text-align: center;
+    margin: 0;
+}
+
+header h1 aside {
+    font-size: 3rem;
 }
 
 .Film {
@@ -29,43 +45,55 @@ img {
 .Film h2 {
 	width: 100%;
     text-align: center;
+    text-transform: uppercase;
+    margin: 2% auto;
 }
 
-article {
+.Card {
 	background-color: #3aa0ffa9;
 	width: 30%;
 	margin: 1%;
-	padding: 0.5%
+	padding: 1%;
+    text-align: center;
+    border: 1px solid midnightblue;
+    box-shadow: 2px 2px 10px #27262b;
 }
 
-#inputSearch {
-    border: none;
+.Card h3 {
+    text-align: center;
+    padding: 1%;
+    text-transform: uppercase;
+    background-color: burlywood;
+    border: 1px solid midnightblue;
+}
+
+.Card img {
+    width: 40%;
+	height: auto;
+    padding: 4% 2%;
+}
+
+.Card p {
+    text-align: justify;
+}
+
+#searchBar {
+    border: 1px solid #27262b;
     width: 100%;
-    padding: 1rem;
+    padding: 1%;
 }
 
-#inputSearch:focus {
+#searchBar:focus {
     outline: none;
 }
 
-body {
-    /* font-family: "Chocolate"; */
-    font-size: 1.5em;
-    background-image: url(./assets/img/white.jpg);
-    background-size: 100%;
-    background-repeat: repeat-y;
-}
-
-header {
-    font-family: "Great";
-    background: url(./assets/img/background.jpeg) center bottom / cover no-repeat;
-    box-shadow: 0 5px 5px grey;
-}
-
-h1 {
-    color: gold;
-    padding: 150px;
-    font-size: 4em;
+footer {
     text-align: center;
-    margin: 0;
+    background-color: #27262b;
+    color: #f0ffff;
+}
+
+footer p {
+    padding: 1%;
+    font-size: 2rem;
 }

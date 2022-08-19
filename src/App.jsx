@@ -1,10 +1,18 @@
 import './App.css';
-import Trendpage from './components/containers/TrendPage/Index';
+import Header from './Components/UI/Elements/Header';
+import Footer from './Components/UI/Elements/Footer';
+import MainCtn from './Components/Containers/MainCtn/Index';
 
 function App() {
 
     return (
-        <Trendpage />
+        <>
+            <Header />
+            
+            <MainCtn />
+
+            <Footer />
+        </>
     );
 }
 

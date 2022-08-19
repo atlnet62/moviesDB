@@ -1,5 +1,5 @@
 
-import loading from './../assets/img/loading.gif'
+import loading from './../../../Assets/Img/loading.gif'
 
 function Loading() {
   return (
@@ -7,4 +7,4 @@ function Loading() {
   )
 }
 
-export default Loading
+export default Loading;
