@@ -16,24 +16,49 @@ html {
 body {
     font-size: 1.5em;
     background: url(./assets/img/bcg.png) repeat;
+    color: #27262b;
     /* background-repeat: repeat-y; */
 }
 
 header {
     font-family: "Dancing";
     background: url(./assets/img/background.jpeg) center bottom / cover no-repeat;
-}
-
-h1 {
     color: gold;
-    padding: 150px;
-    font-size: 6em;
     text-align: center;
-    margin: 0;
+    padding: 10rem 0 0 0;
 }
 
-header h1 aside {
+header h1 {
     font-size: 3rem;
+}
+
+header cite {
+    font-size: 2rem;
+}
+
+header nav {
+    text-align: left;
+    padding: 10rem 0 0 0;
+    font-family: arial;
+    font-size: 2rem;
+}
+
+nav a {
+    color: #f0ffff;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 0 0.2rem;
+    background-color: #00607e;
+    border-radius: 10px 10px 0 0;
+}
+
+nav a:hover {
+    color: #00607e;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 0 0.2rem;
+    background-color: #f0ffff;
+    border-radius: 10px 10px 0 0;
 }
 
 .Film {
@@ -44,47 +69,32 @@ header h1 aside {
 
 .Film h2 {
 	width: 100%;
-    text-align: center;
+    text-align: left;
+    padding: 1% 5%;
     text-transform: uppercase;
     margin: 2% auto;
 }
 
-.Card {
-	background-color: #3aa0ffa9;
-	width: 30%;
-	margin: 1%;
-	padding: 1%;
-    text-align: center;
-    border: 1px solid midnightblue;
-    box-shadow: 2px 2px 10px #27262b;
-}
-
-.Card h3 {
-    text-align: center;
-    padding: 1%;
-    text-transform: uppercase;
-    background-color: burlywood;
-    border: 1px solid midnightblue;
-}
-
-.Card img {
-    width: 40%;
-	height: auto;
-    padding: 4% 2%;
-}
-
-.Card p {
-    text-align: justify;
-}
-
 #searchBar {
-    border: 1px solid #27262b;
+    border-style: none;
     width: 100%;
-    padding: 1%;
+    padding: 1rem;
 }
 
 #searchBar:focus {
     outline: none;
+}
+
+#resultFound article {
+    background-color: #a7a7a7a9;
+}
+
+#home article {
+    background-color: #51ff3aa9;
+}
+
+#trending article {
+    background-color: #3aa0ffa9;
 }
 
 footer {
@@ -96,4 +106,37 @@ footer {
 footer p {
     padding: 1%;
     font-size: 2rem;
+}
+
+.not-found {
+    font-size: 6rem;
+    padding: 25rem 0;
+}
+
+@media screen and (min-width: 1280px) {
+    header {
+        font-family: "Dancing";
+        background: url(./assets/img/background.jpeg) center bottom / cover no-repeat;
+        color: gold;
+        text-align: center;
+    }
+    
+    header h1 {
+        font-size: 6rem;
+    }
+    
+    header cite {
+        font-size: 3rem;
+    }
+  
+    footer {
+        text-align: center;
+        background-color: #27262b;
+        color: #f0ffff;
+    }
+    
+    footer p {
+        padding: 1%;
+        font-size: 2rem;
+    }
 }

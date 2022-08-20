@@ -4,6 +4,7 @@ function Footer() {
     <footer>
         <small>
           <p>Site du group 2lsoft</p>
+          <p>developped by David WEBB</p>
         </small>
     </footer>
   )

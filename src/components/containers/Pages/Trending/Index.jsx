@@ -13,14 +13,14 @@ function Trending() {
     }, [])
   
     const getMoviesList = async () => {
-        const res = await fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${config.API_KEY}`);
+        const res = await fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${config.API_KEY}&language=fr`);
         const resParsed = await res.json();
         setMovies(resParsed.results);
     }
 
 
     return (
-        <section className='Film'>
+        <section id="trending" className='Film'>
         <h2>Voici la liste des films tendances de la semaine!</h2>
         {
             (movies.length > 0 
